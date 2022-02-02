@@ -1,0 +1,42 @@
+
+
+/* MAIN SECTION START */
+
+        
+.main-avatar-image-one {
+    transition: opacity 1.5s ease;
+}
+
+.main-avatar-image-one:hover {
+    opacity:0%;
+}
+
+.main-avatar-image-one,
+.main-avatar-image-two {
+    position: absolute;
+}
+
+.main-avatar-image-two {
+    z-index: 19;
+    visibility: visible;
+}
+
+/* MAIN SECTION END */
+
+/* FOOTER SECTION STARTS */
+nav ul {
+    width: 600px;
+    margin: 0px auto;
+}
+
+footer nav ul li label p {
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+footer nav ul li label p:hover {
+    cursor: pointer;
+    transform:scale(1.13);
+}
+
+/* FOOTER SECTION ENDS */
