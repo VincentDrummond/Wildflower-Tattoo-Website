@@ -1,24 +1,19 @@
 
 
 /* MAIN SECTION START */
+.about-section article,
+.gallery-section article,
+.links-section article {
+    max-width: 600px;
+    margin: 3rem auto;
+}
 
-        
 .main-avatar-image-one {
-    transition: opacity 1.5s ease;
-}
-
-.main-avatar-image-one:hover {
-    opacity:0%;
-}
-
-.main-avatar-image-one,
-.main-avatar-image-two {
-    position: absolute;
+    display: none;
 }
 
 .main-avatar-image-two {
-    z-index: 19;
-    visibility: visible;
+    display: block;
 }
 
 /* MAIN SECTION END */
@@ -31,12 +26,10 @@ nav ul {
 
 footer nav ul li label p {
     cursor: pointer;
-    transition: transform 200ms ease;
+    transition: transform 100ms ease;
 }
 
 footer nav ul li label p:hover {
     cursor: pointer;
     transform:scale(1.13);
 }
-
-/* FOOTER SECTION ENDS */
