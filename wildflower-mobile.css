@@ -28,6 +28,36 @@ html {
 
 /* BODY SECTION STARTS */
 
+/* GALLERY SECTION */
+.gallery-image-selector {
+    border-radius: 5px;
+    width: 30px;
+    margin: 15px;
+}
+
+.image-selectors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    display: none;
+}
+
+.gallery-selector {
+    display: none;
+}
+
+.gallery-selector:checked + .gallery-image {
+    display: block;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* HEADER SECTION STARTS */
 header {
@@ -62,17 +92,11 @@ h2 {
 }
 
 article {
-    display: flex;
-    flex-direction: column;
     margin: 3rem;
 }
 
-.logo-image {
-    width: 100%;
-    max-width: 600px;
-}
-
-.avatar-image {
+.avatar-image,
+.gallery-image {
     max-width: 300px;
     border: #352521 solid 6px;
     border-radius: 10px;
@@ -80,19 +104,12 @@ article {
     width: 100%;
 }
 
-
-.images {
-    display: flex;
-    flex-direction: row;
-}
-
 .main-avatar-image-two {
     display: none;
 }
 
 .about-section p,
-.links-section p,
-.gallery-section p {
+.links-section p {
     font-size: 2.3rem;
     opacity: 100%;
     text-align: left;
@@ -100,7 +117,6 @@ article {
     line-height: 2.7rem;
     margin-bottom: 1rem;
 }
-
 /* MAIN SECTION END */
 
 /* FOOTER SECTION STARTS */
